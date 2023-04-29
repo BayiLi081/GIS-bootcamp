@@ -23,12 +23,11 @@ Software installation troubleshooting (QGIS)
 - **15 mins**: Introduction of GIS
 - **15 mins**: The data model in GIS
   - mainly attribute data model
-
 - **15 mins**: What is spatial data?
   - Concept
   - Entities and terms
   - Format: Raster verses Vector
-  - Spatial reference
+  - [Spatial reference](./contents/spatial_reference/coordinatesystem.md)
 
 **01:00 - 01:15**: 
 
