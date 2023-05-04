@@ -53,9 +53,11 @@ Common spatial analysis methods and their applications in urban research
 
 **02:45 - 03:30**
 
-**Practical**: Create a map with essential elements in QGIS
+**Practical**: [Create a map with essential elements in QGIS](./contents/Practical01.md)
 
 - 15 min: Short demonstration and hands-on practice
+  - Download road network with QGIS plugin - QuickOSM
+
 
 ## Day 2
 
