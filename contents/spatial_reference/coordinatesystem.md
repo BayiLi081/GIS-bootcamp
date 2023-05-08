@@ -12,6 +12,16 @@ unit: degree of latitude and longitude
 
 unit: metres
 
+[Interactive Album of Map Projections 2.0 (psu.edu)](https://projections.mgis.psu.edu/)
+
+Every map projection introduces distortion, and each has its own set of problems. 
+
+Even for the the most common projection, Mercator projection, receives huge criicism for exaggerating the size of countries nearer the poles. 
+
+> On the Mercator projection Greenland appears to be roughly the same size as Africa. In reality, Greenland is 0.8 million sq. miles and Africa is 11.6 million sq. miles, nearly 14 and a half times larger.
+
+[How big the world actually is: The true size](https://www.thetruesize.com/)
+
 
 
 ## EPSG codes
