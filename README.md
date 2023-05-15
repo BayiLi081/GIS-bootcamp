@@ -20,7 +20,7 @@ Software installation troubleshooting (QGIS)
 
 **00:15 - 01:00**: 
 
-- **15 mins**: Introduction of GIS
+- **15 mins**: [Introduction of GIS](http://www.bayi.in/GIS-bootcamp/#1)
 - **15 mins**: The data model in GIS
   - mainly attribute data model
 - **15 mins**: What is spatial data?
@@ -47,13 +47,13 @@ Break and small Q&A
 **02:00 - 02:45**:
 
 Common spatial analysis methods and their applications in urban research
-- **15 mins**: Spatial autocorrelation
-- **15 mins**: Hotspot analysis
-- **15 mins**: Network analysis
+- **15 mins**: [Spatial autocorrelation](./contents/spatialautocorrelation.md)
+- **15 mins**: [Hotspot analysis](./contents/hotspot.md)
+- **15 mins**: [Network analysis](./contents/networkanalysis.md)
 
 **02:45 - 03:30**
 
-**Practical**: [Create a map with essential elements in QGIS](./contents/Practical01.md)
+**Practical**: [Create a map with essential elements in QGIS ](./contents/Practical01.md)
 
 - 15 min: Short demonstration and hands-on practice
   - Download road network with QGIS plugin - QuickOSM
@@ -64,6 +64,10 @@ Common spatial analysis methods and their applications in urban research
 **00:00 - 01:00**:
 
 **Practical**: "Where should I live in the city?" residence-selection analysis
+
+[(PDF) Spatial Patterns for Crime Spots (researchgate.net)](https://www.researchgate.net/publication/330117670_Spatial_Patterns_for_Crime_Spots)
+
+maybe replace it with crime spots analysis, residential choice model is way too complicated
 
 - 30 min: Instruction and demonstration
 - 30 min: hands-on practice
