@@ -8,6 +8,45 @@ It always surrounds the following three questions?
 - What process created this pattern?
 - Is the pattern always evident?
 
+## Types of Spatial Analysis
+
+### Based on data type
+
+- Point Pattern Analysis
+- Area (Polygon) Analysis
+- Network Analysis
+- Analysis of Interaction
+
+### Based on Theme
+
+- Measurements
+
+  Distance & Length, Shape, Slope and Aspect
+
+- Query and Reasoning
+
+  Where is?
+
+  What is this?
+
+  How to get there?
+
+- Transformation and Interplolation
+
+  Buffering, Number of points in polygon, Overlaying, Interpolation
+
+- Descriptive Analysis
+
+  Gravity centres, Dispersion, Nearest neighbour, Spatial autocorrelation, Fragmentation
+
+- Location Optimisation
+
+  Optimum location, routing, location and allocation
+
+- Hypothesis Testing
+
+  Predictive analysis, Confirmatory: Drawing inferences from sample to population, Spatial regression
+
 ## Example of spatial analysis
 
 | Topic                                                        |                                                              |

@@ -35,5 +35,34 @@ It should take a while to acquire the data depending on the scale of query.
 
 103.94455612645753
 
+## Basic Elements of a Map
 
+1. Title: 
 
+   A concise and descriptive title that summarizes the main theme or purpose of the map.
+
+2. Legend or Key:
+
+   A legend or key that explains the symbols, colors, and other features on the map and their meaning.
+
+3. Scale: 
+
+   A scale that shows the relationship between the distances on the map and the actual distances on the Earth's surface.
+
+4. North arrow or compass rose: 
+
+   A north arrow or compass rose that indicates the orientation of the map and helps the reader to identify the cardinal directions (north, south, east, and west).
+
+Additions:
+
+1. Data sources:
+
+   A statement that identifies the sources of data used to create the map, including the date of data collection and the method used to obtain the data.
+
+2. Projection:
+
+   A projection that shows how the three-dimensional Earth is represented on a two-dimensional surface and helps to minimize distortion of geographic features.
+
+3. Insets or Overview map:
+
+   Insets or overview maps that provide additional information about a specific area or the larger context of the map.

@@ -35,7 +35,7 @@ Break and small Q&A
 
 **01:15 - 02:00**:
 
-- **10 mins**: Introduction of spatial analysis
+- **10 mins**: [Introduction of spatial analysis](./contents/002_definespatialanalysis.md)
 - **25 mins**: Spatial pattern
   - spatial pattern and the process created it
   - example of spatial analysis
@@ -48,8 +48,8 @@ Break and small Q&A
 
 Common spatial analysis methods and their applications in urban research
 - **15 mins**: [Spatial autocorrelation](./contents/spatialautocorrelation.md)
-- **15 mins**: [Hotspot analysis](./contents/hotspot.md)
-- **15 mins**: [Network analysis](./contents/networkanalysis.md)
+- **15 mins**: [Local Indicators of Spatial Association (LISA)](./contents/lisa.md)
+- **15 mins**: [Global verses Local Statistics](./contents/globallocal.md)
 
 **02:45 - 03:30**
 
@@ -63,7 +63,7 @@ Common spatial analysis methods and their applications in urban research
 
 **00:00 - 01:00**:
 
-**Practical**: "Where should I live in the city?" residence-selection analysis
+**Practical**: "Where should I live in the city?" residence-selection analysis (network-based accessibility analysis)
 
 [(PDF) Spatial Patterns for Crime Spots (researchgate.net)](https://www.researchgate.net/publication/330117670_Spatial_Patterns_for_Crime_Spots)
 
@@ -112,8 +112,8 @@ Troubleshooting on yesterday's practical and explain the answer step by step
 
 **00:30 - 01:00**: 
 
-- **15 mins**: Spatial Joins and data aggregation
-- **15 mins**: Spatial interpolation
+- **15 mins**: [Spatial Joins and data aggregation](./contents/overlay.md)
+- **15 mins**: [Spatial interpolation](./contents/spatialinterpolation.md)
 
 **01:00 -  01:10**: 
 

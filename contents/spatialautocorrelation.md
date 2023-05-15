@@ -1,10 +1,6 @@
 # Spatial Autocorrelation
 
-- Pattern of single variable (univariate data analysis)
-
-- 
-
-| ![Conceptual models of spatial autocorrelation. Positive spatial autocorrelation (a) is associated with a clustering, or aggregating, phenomenon. Positive spatial autocorrelation was observed for all fungal and tree communities at small scales and also across the extent of the study (Fig. 2). Negative spatial autocorrelation (b) was observed for all fungal communities at intermediate scales (3.7–26 km). No spatial autocorrelation (c) is associated with randomly spaced distribution patterns for fungal communities and is also the null hypothesis used in Mantel tests](https://www.researchgate.net/publication/345326470/figure/fig4/AS:960053502804001@1605906000766/Conceptual-models-of-spatial-autocorrelation-Positive-spatial-autocorrelation-a-is.png) |
+| ![Conceptual models of spatial autocorrelation. Positive spatial autocorrelation (a) is associated with a clustering, or aggregating, phenomenon. Positive spatial autocorrelation was observed for all fungal and tree communities at small scales and also across the extent of the study (Fig. 2). Negative spatial autocorrelation (b) was observed for all fungal communities at intermediate scales (3.7–26 km). No spatial autocorrelation (c) is associated with randomly spaced distribution patterns for fungal communities and is also the null hypothesis used in Mantel tests](../imgs/spatialautocorrelation_001.png) |
 | ------------------------------------------------------------ |
 | Source: [Scale-Dependent Influences of Distance and Vegetation on the Composition of Aboveground and Belowground Tropical Fungal Communities](https://www.researchgate.net/publication/345326470_Scale-Dependent_Influences_of_Distance_and_Vegetation_on_the_Composition_of_Aboveground_and_Belowground_Tropical_Fungal_Communities) |
 
@@ -26,7 +22,23 @@
 
   This means that the values of a particular attribute or feature being measured are not influenced by the values of nearby locations and are instead distributed randomly across the study area.
 
-## Moran's I
+## Global Moran's I
+
+The formula for calculating Global Moran's I is as follows:
+
+$$
+I=\frac{n}{\sum_{i=1}^{n}\sum_{j=1}^{n}w_{ij}}\cdot\frac{\sum_{i=1}^{n}\sum_{j=1}^{n}w_{ij}(x_{i}-\bar{x})(x_{j}-\bar{x})}{\sum_{i=1}^{n}(x_{i}-\bar{x})^{2}}
+$$
+
+
+
+n is the number of cases
+
+xi and xj denote the attribute values at location i, j
+
+x-bar is the mean value of the variable across all spatial units
+
+w_ij denote weights from the spatial weight matrix
 
 > Moran's I is a statistical measure that quantifies the presence and strength of spatial autocorrelation, measuring the overall spatial autocorrelation of spatial data set. 
 >
