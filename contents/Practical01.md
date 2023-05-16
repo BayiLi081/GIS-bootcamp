@@ -9,6 +9,10 @@
 3. "install plugin"
 4. Two buttons of QuickOSM will be displayed in the top panel of main window
 
+### Install HCMGIS through the plugin manager
+
+Select a basemap from the HCMGIS services
+
 ### Download the data
 
 Click the QuickOSM button (green one) or go to Vector - QuickOSM - QuickOSM
@@ -26,14 +30,34 @@ Detail about key-value pairs used in OSM can read from [OSM wiki: Key:highway](h
 
 It should take a while to acquire the data depending on the scale of query.
 
+Due to time issue, limit the query area to the planning area Tampines (Load the Singapore planning area shpfile first):
+
+1. Use the **Identify Features** to read the information of selected feature.
+2. Use the **Select Features by Area or Single click** to actually select the feature you want to limit your query area to Tampines
+3. Run the query (**Layer Extent -> Singapore_planningarea->Only selected features**)
+
+![practical_001](../imgs/practical_001.png)
+
+4. The difference of temporary layer and save as file
+5. Save the file as tampines_mainroad.shp and remove the temporary layers
+
+### Clear the useless columns of the data
+
+Take a look of the dbf file, which contains a lot of information, but a lot of columns which is unnecessary and slow down the further analysis.
+
+Use **Retain Fields** or **Drop Fields** to downsize the file (tampines_mainroad.shp).
+
 ### Add point feature by coordinates
 
 1. Go to Google Map, find the location you want to add, and  find its coordinates (longitude and latitude)
-2. Create a point format vector layer, 
+2. Create a point format vector layer (dont use projected crs, as we are using degree as unit, so just use 4326)
+3. **Add Point Feature**
+4. **Vertex tool current layer**
+5. random add a point, right click the point and manually add the coordinates in the vertex editor table
 
-,1.3534019156675352
+## Add exist data to the Map
 
-103.94455612645753
+Drag the [Singapore_mainland_roadnetwork.shp](../../../GIS-bootcamp_qgisfiles/data/bus_stops_singapore.shp) into the canvas of QGIS
 
 ## Basic Elements of a Map
 
@@ -66,3 +90,25 @@ Additions:
 3. Insets or Overview map:
 
    Insets or overview maps that provide additional information about a specific area or the larger context of the map.
+
+## Generating the map
+
+- Save spatial bookmarks (View -> Create new spatial bookmark) (Both Singapore and Tampines)
+- Open the spatial bookmark manager
+- Edit the exist spatial bookmark (open the bookmark editor from the content windows, and change the canvas extent and choose **Map Canvas Extent**)
+
+### Create Print Layout
+
+1. Create print layout from project in the top ribbon
+2. Name it (for example, map_singapore)
+3. **Add map** from the left tab
+4. Add North arrow
+5. Add Scale bar
+6. Change the color of bar or font if its hard to identify due to mix with the map background
+7. Add the legend (Remove unnecessary legend iterms from the properities of the legend tab)
+8. Add the explainary text
+9. Export the map as image
+10. 
+
+
+

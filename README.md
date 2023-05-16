@@ -18,12 +18,10 @@ Please make sure that you have properly installed the QGIS from the [official we
 
 Software installation troubleshooting (QGIS)
 
-**00:15 - 01:00**: 
+**00:15 - 01:00**: [Introduction of GIS](./contents/001_definegis.md)
 
-- **15 mins**: [Introduction of GIS](http://www.bayi.in/GIS-bootcamp/#1)
-- **15 mins**: The data model in GIS
-  - mainly attribute data model
-- **15 mins**: What is spatial data?
+- The data model in GIS: mainly attribute data model
+- What is spatial data?
   - Concept
   - Entities and terms
   - Format: Raster verses Vector
@@ -35,13 +33,19 @@ Break and small Q&A
 
 **01:15 - 02:00**:
 
-- **10 mins**: [Introduction of spatial analysis](./contents/002_definespatialanalysis.md)
-- **25 mins**: Spatial pattern
-  - spatial pattern and the process created it
+- **10 mins**: [Introduction of spatial pattern](./contents/002_spatialpattern.md)
+
+  spatial pattern and the process created it
+
+- **25 mins**: [Introduction of spatial analysis](./contents/002_definespatialanalysis.md)
+  
   - example of spatial analysis
   - common research questions related to spatial pattern investigation in urban research
+  
 - **10 mins**: Basic softwares and techniques for GIS
-  - Open-source and close-source solutions
+  
+  - [Open-source and closed-source solutions](./contents/os_cs.md)
+  
 - **10 mins**: Q&A
 
 **02:00 - 02:45**:
@@ -98,7 +102,7 @@ Break and small Q&A
 
 - **10 mins**: Introduce some common data sources for remote sensing
 
-- **Practical**: "Witness the climate change" spatiotemporal analysis on urban heat island
+- **Practical**: "The change of green cover in Singapore" spatiotemporal analysis on NDVI [Longitudinal study](./contents/longitudinalNDVI.md)
   - 30 min: Instruction and demonstration
   - 5 min: Q&A
 

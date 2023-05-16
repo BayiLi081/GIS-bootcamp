@@ -2,9 +2,7 @@
 
 Create a new project, save it on the drive, and name it as you like. 
 
-Drag the [bus_stops_singapore.shp](file:///Users/bayili/Documents/sutd/GIS-bootcamp_qgisfiles/data/bus_stops_singapore.shp) into the canvas of QGIS
-
-
+Drag the [bus_stops_singapore.shp](../../../GIS-bootcamp_qgisfiles/data/bus_stops_singapore.shp) into the canvas of QGIS
 
 # Extra intro of QGIS
 
@@ -39,3 +37,10 @@ Go through the tabs under layer properties:
    Attributes data model
 
 6. Other tabs are not usually used, but you can play around upon yourself.
+
+## Project the file to another CRS
+
+The use of **Reproject layer** tool in QGIS
+
+The [bus_stops_singapore.shp](../../../GIS-bootcamp_qgisfiles/data/bus_stops_singapore.shp) comes with 4326, try to project to 3857
+

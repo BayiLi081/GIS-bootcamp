@@ -1,12 +1,6 @@
 # What is spatial analysis?
 
-Spatial analysis investigates spatial pattern and process ([O'Sullivan & Unwin, 2003](https://www.wiley.com/en-us/Geographic+Information+Analysis%2C+2nd+Edition-p-9780470288573)).
-
-It always surrounds the following three questions?
-
-- What is the pattern in space?
-- What process created this pattern?
-- Is the pattern always evident?
+**Spatial analysis is the exploration of data, description of patterns and understanding of nature of relationships in data sets.**
 
 ## Types of Spatial Analysis
 
