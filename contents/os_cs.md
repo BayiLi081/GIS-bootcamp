@@ -24,3 +24,10 @@ You can basically find all the solution using open sourced software.
 
 The layout of interfaces, the name of analysis tool and the analysis function might be slightly different, but overall, it is not that hard to switch between each other.
 
+In this bootcamp, **QGIS** will be used for several advantages:
+
+- Open source (Free to use)
+- Cross-Platform (Mac, Windows and Linux)
+- Integration with Python (Although ArcGIS Pro has Jupyter notebook integrated inside)
+- A wider range of plugins and extensions
+- More file format supported especially for open-source and proprietary formats such as GeoJSON

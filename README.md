@@ -2,13 +2,13 @@
 
 Contributors: Li Bayi
 
+Designed for 3*3-hour Lecture + Tutorial Contents.
+
+Last Update: 17 May 2023
+
 ## Preparation
 
-In this bootcamp, QGIS will be used for several advantages:
-
-- Open source
-- Cross-Platform
-- Integration with Python
+**You can sit in groups according to the GroupMembers.png in Google Shared Drive, so it will be easier to communicate and help each other**
 
 Please make sure that you have properly installed the QGIS from the [official website](https://qgis.org/en/site/forusers/download.html) before the bootcamp started. You can download the LTR version as it is more stable to run on your computer and compatible to more extensions normally.
 
@@ -65,9 +65,17 @@ Common spatial analysis methods and their applications in urban research
 
 ## Day 2
 
-**00:00 - 01:00**:
+**00:00 - 00:15**:
 
-**Practical**: "Where should I live in the city?" residence-selection analysis (network-based accessibility analysis)
+Recap of the day 1 contents
+
+**00:15 - 01:00**:
+
+**Practical**: 
+
+1. Read the 
+
+"Where should I live in the city?" residence-selection analysis (network-based accessibility analysis)
 
 [(PDF) Spatial Patterns for Crime Spots (researchgate.net)](https://www.researchgate.net/publication/330117670_Spatial_Patterns_for_Crime_Spots)
 
@@ -117,7 +125,7 @@ Troubleshooting on yesterday's practical and explain the answer step by step
 **00:30 - 01:00**: 
 
 - **15 mins**: [Spatial Joins and data aggregation](./contents/overlay.md)
-- **15 mins**: [Spatial interpolation](./contents/spatialinterpolation.md)
+- **15 mins**: [Network Analysis](./contents/network_analysis.md)
 
 **01:00 -  01:10**: 
 
@@ -125,8 +133,8 @@ Break and small Q&A
 
 **01:10 -  01:40**: 
 
-- **15 mins**: Geocoding and address matching
-- **15 mins**: Short demonstration of using Google Map API to translate address into coordinates
+- **15 mins**: [Geocoding and address matching](./contents/geocoding.md)
+- **15 mins**: [Short demonstration of using Google Map API to translate address into coordinates](./contents/practical_geocoding_api.md)
 
 **01:40 -  01:50**: 
 
@@ -136,14 +144,14 @@ Break and small Q&A
 
 Geospatial analysis and visualisation with other tools:
 
-- **20 mins**: How to use the emerging technologies and tools in GIS to assist your research? 
+- **20 mins**: [How to use the emerging technologies and tools in GIS to assist your research?](./contents/othertools.md)
   - light-coding problem solving skill
-- **20 mins**: How to use Python scripts to power up your spatial analysis task in QGIS?
+- **20 mins**: [How to use Python scripts to power up your spatial analysis task in QGIS?](./contents/pyqgis.md)
   - PyQGIS tutorial and basic demonstration
 
 **02:30 -  03:00**: 
 
-- **Practical**: "Do not recreating wheels!" using existing analysis pakage/API to perform analysis tasks in batch
+- **Practical**: ["Do not recreating wheels!" using existing analysis pakage/API to perform analysis tasks in batch](./contents/practical_othertools.md)
   - **20 mins**: Demonstration
   - **20 mins**: Hands-on practice
 

@@ -60,26 +60,56 @@ w_ij denote weights from the spatial weight matrix
 
 ## Calculating Moran's I in QGIS
 
-1. Generate a spatial weights matrix: The first step in calculating Moran's I in QGIS is to generate a spatial weights matrix that defines the relationship between neighboring locations in your spatial dataset. This can be done using the "Generate Spatial Weights Matrix" tool in the "Processing Toolbox".
-2. Select the input layer: Once you have generated the spatial weights matrix, you need to select the input layer for the Moran's I analysis. This layer should be a vector layer that contains the attribute data you want to analyze.
-3. Run the Moran's I tool: Next, you can run the Moran's I tool by selecting "Vector analysis" > "Moran's I" from the "Processing Toolbox". In the "Moran's I" dialog box, select the input layer, the attribute column to analyze, and the spatial weights matrix you generated in step 1.
-4. Interpret the results: After running the Moran's I tool, QGIS will generate a Moran's I report that includes the Moran's I index, z-score, and p-value. You can interpret these results to determine the presence and strength of spatial autocorrelation in your dataset, as described in the previous answer.
-5. Visualize the results: Finally, you can visualize the Moran's I results in QGIS using various tools such as Moran scatterplots, Moran maps, or LISA maps, which show the spatial clusters of similar or dissimilar values in your dataset.
+Data: Scottish Index of Multiple Deprivation
 
-## Interpreting Moran's I results in QGIS
+Attributes: Employment
 
-Generate a spatial weights matrix: Before running the Moran's I tool, you need to generate a spatial weights matrix that defines the relationship between neighboring locations in your dataset. This can be done using various methods, such as distance-based methods, contiguity-based methods, or network-based methods.
+### Preparation
 
-1. Run the Moran's I tool: Once you have generated the spatial weights matrix, you can run the Moran's I tool in QGIS. The tool will calculate Moran's I index and associated statistical measures such as z-score and p-value.
-2. Interpret the results: The Moran's I results in QGIS can be interpreted as follows:
+1. Clip the datazones within Edinburgh's boundary out using the  [Edinburgh_Community_Council_Boundaries.geojson](../data/simd2020_withgeog/Edinburgh_Community_Council_Boundaries.geojson) (Intersect and delete the extra ones, because there are not topologically aligned with neigbour zones)
 
-- Moran's I index: This is a measure of the spatial autocorrelation in your dataset, ranging from -1 (perfect negative autocorrelation) to 1 (perfect positive autocorrelation), with 0 indicating no spatial autocorrelation. A positive Moran's I index value suggests that neighboring locations tend to have similar values, while a negative value suggests that neighboring locations tend to have dissimilar values.
-- Z-score: This measures the deviation of the observed Moran's I index from the expected value under the null hypothesis of spatial randomness. A z-score greater than 1.96 indicates significant positive spatial autocorrelation, while a z-score less than -1.96 indicates significant negative spatial autocorrelation.
-- P-value: This measures the probability of obtaining the observed Moran's I index under the null hypothesis of spatial randomness. A p-value less than 0.05 suggests significant spatial autocorrelation, while a p-value greater than 0.05 suggests no significant spatial autocorrelation.
+   **Save only selected features**
 
-1. Visualize the results: You can visualize the Moran's I results in QGIS using various tools such as Moran scatterplots, Moran maps, or LISA maps, which show the spatial clusters of similar or dissimilar values in your dataset.
+2. Join table with the datazones within Edinburgh's boundary, only keep the necessary attributes
 
-Interpreting Moran's I results in QGIS can provide insights into the underlying spatial processes that generate your data, inform spatial planning and decision-making, and guide the choice of statistical models to account for spatial autocorrelation.
+   **Join attributes by field value**
+
+   **Layer 2 fields to copy: only select employment rate and Data_Zone**
+
+3. Open the field tab in the properties of the layer, which shows the employment field is in text type. So it is not accepted in further mathematical calculation.
+
+   Open field calculator, tick create a new field, give it a name with field type decimal number, leave others as default.
+
+   In the expression window, key in
+
+   ```
+   to_real(replace( "employment" , '%', ''))/100
+   ```
+
+   Click ok
+
+### Processing
+
+Install the plugin "Spatial Analysis Toolbox" in the Plugins manager
+
+The plugin with the new spatial analysis tools will be shown at the bottom of the processing toolbox.
+
+**What is Queen contiguity, Rook contiguity, K Nearest Neighbors and Distance Band**
+
+| <img src="../imgs/globalmoran_002.jpeg" alt="globalmoran_002" style="zoom:50%;" /> |
+| ------------------------------------------------------------ |
+| Source: Lloyd, C. (2010). Spatial data analysis: an introduction for GIS users. Oxford university press. |
+| <img src="../imgs/globalmoran_001.png" alt="globalmoran_001" style="zoom: 33%;" /> |
+| Source: [K-Nearest Neighbors](https://towardsdatascience.com/knn-k-nearest-neighbors-1-a4707b24bd1d) |
+| ![globalmoran_003](../imgs/globalmoran_003.png)              |
+| Source: [Calculate Distance Band from Neighbor Count (Spatial Statistics)](https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-statistics/calculate-distance-band-from-neighbor-count.htm) |
+
+After running the Moran's I tool, QGIS will generate a Moran's I report that includes the Moran's I index, z-score, and p-value. You can interpret these results to determine the presence and strength of spatial autocorrelation in your dataset.
+
+- Is the result significant?
+
+- What is the Moran's I value?
+- What it means?
 
 ## Applications of Moran's I in Urban Research
 

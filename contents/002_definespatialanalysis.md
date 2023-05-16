@@ -41,6 +41,18 @@
 
   Predictive analysis, Confirmatory: Drawing inferences from sample to population, Spatial regression
 
+## Questions, spatial analysis tools and examples of study
+
+| Questions                                                    | Tools                                           | Examples                                                     |
+| ------------------------------------------------------------ | ----------------------------------------------- | ------------------------------------------------------------ |
+| Where are the hot spots?<br>Where are the cold spots?<br>How intense is the clustering | Hot Spot Analysis, Cluster and Outlier Analysis | Where are the sharpest boundaries between  affluence and poverty? |
+| Where are the spatial outliers?                              | Cluster and Outlier Analysis                    | Where do we find anomalous commuting patterns?               |
+| How can resources be most effectively deployed?              | Hot Spot Analysis                               | Where do we see unexpectedly high rates of COVID-19 infections? |
+| Which locations are farthest from the problem?               | Hot Spot Analysis                               | Where should evacuation sites be located?                    |
+| Which features are most alike? What does the spatial fabric of the data look like? | Grouping Analysis                               | Which disease incidents are likely part of the same outbreak? |
+
+Source: [Spatial Pattern Analysis: Mapping Trends and Clusters (esri.com)](https://proceedings.esri.com/library/userconf/proc13/tech-workshops/tw_336.pdf)
+
 ## Example of spatial analysis
 
 | Topic                                                        |                                                              |

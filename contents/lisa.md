@@ -41,15 +41,11 @@ w_ij denote weights from the spatial weight matrix
 | Spatial autocorrelation of the local indicators of spatial association (LISA) analysis. |
 | Source: [An Application of the Spatial Autocorrelation Method on the Change of Real Estate Prices in Taitung City](https://www.mdpi.com/2220-9964/8/6/249) |
 
-## Calculating Local Moran's I in QGIS
+## Calculating Local Moran's I
 
-1. Load the spatial dataset that you want to analyze into QGIS.
-2. Go to the "Vector" menu and select "Spatial Analysis Tools" > "Analyse Spatial Patterns."
-3. In the "Analyse Spatial Patterns" window, select the input vector layer that you want to analyze.
-4. Choose the variable that you want to analyze. This could be a field in the attribute table that contains numerical data.
-5. Choose the type of spatial relationship you want to measure. Local Moran's I calculates the spatial autocorrelation of each feature with its neighboring features.
-6. Choose the distance band method. This determines the distance between each feature and its neighbors. The "Fixed distance" option allows you to specify a fixed distance, while the "Distance band" option allows you to specify a range of distances.
-7. Specify the distance band or fixed distance, depending on the method you chose.
-8. Choose the unit of measurement for the distance band or fixed distance.
-9. Choose the output file name and location.
-10. Click "Run" to calculate Local Moran's I.
+Use [GeoDa]([Download | GeoDa on Github (geodacenter.github.io)](https://geodacenter.github.io/download.html)), because of no internal analysis tool for local Moran's I in QGIS.
+
+It is also a open source software.
+
+> the spatial *lag* is a weighted sum of the *values* observed at *neighboring locations*, since the non-*neighbors* are not included
+

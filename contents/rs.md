@@ -53,6 +53,8 @@ The Normalized Difference Built-up Index (NDBI) is a remote sensing index that q
 It can provide valuable information about the extent and density of built-up areas, and can be used to monitor urban expansion, land use changes, and their impact on the environment.
 
 It is calculated using the following formula:
+
+
 $$
 NDBI = (SWIR - NIR) / (SWIR + NIR)
 $$
