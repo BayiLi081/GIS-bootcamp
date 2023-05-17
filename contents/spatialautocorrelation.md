@@ -92,7 +92,33 @@ Attributes: Employment
 
 Install the plugin "Spatial Analysis Toolbox" in the Plugins manager
 
+The tool relies on other libraries and hasn't been updated for a year. So it probrary returns a bunch of errors due to lack of dependent libraries or incompatible issues.
+
+> pip install pandas pyproj fiona geopandas libpysal esda mgwr
+
+To install packages in QGIS Python environment:
+
+>For mac / linux users:
+>
+>You need find the Python interpreter path first:
+>
+>/Applications/QGIS.app/Contents/MacOS/bin/python3.X -m ensurepip
+>
+>/Applications/QGIS.app/Contents/MacOS/bin/python3.X -m pip install pandas pyproj fiona geopandas libpysal esda mgwr
+>
+>(X depends on the Python version that QGIS uses, similar with linux system)
+>
+>For windows user:
+>
+>1. Open OSGeo Shell (py3_env to activate python environment, if needed)
+>2. Get fiona whl file (based on your system and python version) https://www.lfd.uci.edu/~gohlke/pythonlibs/#fiona
+>3. Then pip install *Path To whl file*
+>
+>3. pip install pandas pyproj shapely geopandas libpysal esda mgwr
+
 The plugin with the new spatial analysis tools will be shown at the bottom of the processing toolbox.
+
+So, if you have trouble installing it or runing it properly, you could download GeoDa instead of spending too much time configuring it.
 
 **What is Queen contiguity, Rook contiguity, K Nearest Neighbors and Distance Band**
 

@@ -48,41 +48,28 @@ Break and small Q&A
   
 - **10 mins**: Q&A
 
-**02:00 - 02:45**:
+**02:00 - 03:00**:
 
-Common spatial analysis methods and their applications in urban research
-- **15 mins**: [Spatial autocorrelation](./contents/spatialautocorrelation.md)
-- **15 mins**: [Local Indicators of Spatial Association (LISA)](./contents/lisa.md)
-- **15 mins**: [Global verses Local Statistics](./contents/globallocal.md)
-
-**02:45 - 03:30**
-
-**Practical**: [Create a map with essential elements in QGIS ](./contents/Practical01.md)
-
-- 15 min: Short demonstration and hands-on practice
-  - Download road network with QGIS plugin - QuickOSM
+[Global spatial autocorrelation and how to calcute it in QGIS/GeoDa](./contents/spatialautocorrelation.md)
 
 
 ## Day 2
 
 **00:00 - 00:15**:
 
-Recap of the day 1 contents
+[Recap](./contents/recap_day01.md) of the day 1 contents
 
-**00:15 - 01:00**:
+**00:15 - 00:45**:
 
-**Practical**: 
+- **15 mins**: [Local Indicators of Spatial Association (LISA)](./contents/lisa.md)
+- **15 mins**: [Global verses Local Statistics](./contents/globallocal.md)
 
-1. Read the 
+**00:45 - 01:00**:
 
-"Where should I live in the city?" residence-selection analysis (network-based accessibility analysis)
+**Practical**: [Create a map with essential elements in QGIS ](./contents/Practical01.md)
 
-[(PDF) Spatial Patterns for Crime Spots (researchgate.net)](https://www.researchgate.net/publication/330117670_Spatial_Patterns_for_Crime_Spots)
-
-maybe replace it with crime spots analysis, residential choice model is way too complicated
-
-- 30 min: Instruction and demonstration
-- 30 min: hands-on practice
+- 15 min: Short demonstration and hands-on practice
+  - Download road network with QGIS plugin - QuickOSM
 
 **01:00 - 01:15**: 
 
