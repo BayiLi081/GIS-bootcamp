@@ -4,43 +4,37 @@ Compared to global statistics, local statistics more press on **where the specif
 
 | Global Statistics                                          | Local Statistics                                             |
 | ---------------------------------------------------------- | ------------------------------------------------------------ |
-| Indentify and measure the pattern of the entire study area | Identify variation across the study area, focusing on individual features and their relationships to nearby fatures |
+| Indentify and measure the pattern of the entire study area | Identify **spatial variation** across the study area, focusing on individual features and their relationships to nearby fatures |
+
+**What can perfectly describe location A cannot explain location B at same level.**
+
+**The neigbourhoods matter (local explanation than a universal explanation of some phenomenons)**
 
 ## Common global and local statistics
 
-### Global spatial autocorrelation and local spatial association
+#### Global spatial autocorrelation and local spatial association
 
 The sum of LISAs for all observations is propotional to a global indicator of spatial association.
 
+#### Global regression (Ordinary least squares) and Local regression model (Geographically weighted Regression)
 
-
-
-
-### Global regression (Ordinary least squares) and Local regression model (Geographically weighted Regression)
-
-#### Global regression - Ordinary Least Squares (OLS)
+##### Global regression - Ordinary Least Squares (OLS)
 
 OLS is a statistical method used to estimate the relationship between a dependent variable and one or more independent variables. 
 
-It assumes that the relationship between the variables is constant across the entire study area and uses a single set of coefficients to model the relationship. 
+It is a linear regression technique used to find the best-fitting line for a set of data points by minimizing the sum of the squared differences between the observed and predicted values of the dependent variable.
 
-The OLS model aims to minimize the sum of the squared differences between the observed and predicted values of the dependent variable.
-
-#### local regression - Geographically weighted regression (GWR)
+##### local regression - Geographically weighted regression (GWR)
 
 $$
 y_i=\beta_{i0}+\sum_{j=1}^{m}\beta_{ij}x_{ij}+\epsilon_i
 $$
 
-
-
-
-
 where:
 
 - $y_i$ is the dependent variable for the $i^{th}$ observation.
-- $\beta_0(u_i,v_i)$ is the spatially varying intercept at location $(u_i,v_i)$.
-- $\beta_j(u_i,v_i)$ is the spatially varying coefficient for the $j^{th}$ independent variable at location $(u_i,v_i)$.
+- $\beta_i0$ is the spatially varying intercept at location $i$.
+- $\beta_ij$ is the spatially varying coefficient for the $j^{th}$ independent variable at location $i$.
 - $x_{ij}$ is the value of the $j^{th}$ independent variable for the $i^{th}$ observation.
 - $\epsilon_i$ is the random error term for the $i^{th}$ observation.
 
