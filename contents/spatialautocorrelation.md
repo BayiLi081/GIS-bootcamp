@@ -139,13 +139,13 @@ After running the Moran's I tool, QGIS will generate a Moran's I report that inc
 
 ## Applications of Moran's I in Urban Research
 
+Spatial autocorrelation is used to identify patterns of land use or urban development. For example, by analyzing the spatial autocorrelation of housing prices, researchers can identify areas with similar prices and then investigate the underlying factors that drive the prices.
+
 ### Example 01: 
 
 Xu, C., Pribadi, D.O., Haase, D. and Pauleit, S., 2020. Incorporating spatial autocorrelation and settlement type segregation to improve the performance of an urban growth model. *Environment and Planning B: Urban Analytics and City Science*, *47*(7), pp.1184-1200.
 
 In this study, global Moran's I is used to detect the spatial autocorrelation of land use data (high- and low-density settlement types).
-
-
 
 Spatial pattern of settlement growth
 
@@ -170,8 +170,6 @@ Xu, Y., Santi, P. and Ratti, C., 2022. Beyond distance decay: Discover homophily
 | Source: The spatial patterns of average housing price at the level of Voronoi cells. (B) Global Moran’s *I* is computed over the housing prices at these Voronoi cells. The analysis and report are derived from ESRI’s ArcGIS product. |
 
 
-
-Spatial autocorrelation is used to identify patterns of land use or urban development. For example, by analyzing the spatial autocorrelation of housing prices, researchers can identify areas with similar prices and then investigate the underlying factors that drive the prices.
 
 
 

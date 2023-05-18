@@ -35,6 +35,12 @@ w_ij denote weights from the spatial weight matrix
   - Feature is surrounded by features **with dissimilar values**.
   - Feature is **an outlier**.
   - Statistically significant outliers can be a feature with a high value surrounded by features with low values (HL) or a feature with a low value surrounded by features with high values (LH).
+  
+- Not significant area
+
+  The local Moran's I index generates **a z-score for each feature**, which is calculated by dividing the observed local Moran's I value by **the standard deviation of the expected local Moran's I values** under the null hypothesis of spatial randomness. 
+
+  A feature with a high z-score (i.e., greater than 1.96 or less than -1.96) indicates that the observed clustering is unlikely to have occurred by chance alone, and therefore, the feature is considered statistically significant.
 
 | ![lisa_001](../imgs/lisa_001.webp)                           |
 | ------------------------------------------------------------ |

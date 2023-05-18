@@ -29,7 +29,7 @@ Spatial analysis investigates spatial pattern and process ([O'Sullivan & Unwin, 
 
 *z-scores*: standard deviations
 
-*z-scores* can be mapped to specific *p-values*
+*z-scores* can be mapped to specific *p-values* (Source: [What is a z-score? What is a p-value?—ArcGIS Pro | Documentation](https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-statistics/what-is-a-z-score-what-is-a-p-value.htm))
 
 | *p-values* | *z-scores* |
 | ---------- | ---------- |
