@@ -61,6 +61,8 @@ Break and small Q&A
 
 **00:15 - 00:45**:
 
+- **10 mins**: [Find the data](./contents/datasearch.md)
+
 - **15 mins**: [Local Indicators of Spatial Association (LISA)](./contents/lisa.md)
 - **15 mins**: [Global verses Local Statistics](./contents/globallocal.md)
 
@@ -103,6 +105,8 @@ Break and small Q&A
 
 Hands-on practice is required to complete after class and to be continued in next day's class.
 
+Reminding the students to register an account on [EROS Registration System (usgs.gov)](https://ers.cr.usgs.gov/register)
+
 ## Day 03
 
 **00:00 - 00:30**: 
@@ -111,8 +115,7 @@ Troubleshooting on yesterday's practical and explain the answer step by step
 
 **00:30 - 01:00**: 
 
-- **15 mins**: [Spatial Joins and data aggregation](./contents/overlay.md)
-- **15 mins**: [Network Analysis](./contents/network_analysis.md)
+[Network Analysis](./contents/network_analysis.md)
 
 **01:00 -  01:10**: 
 
@@ -120,8 +123,7 @@ Break and small Q&A
 
 **01:10 -  01:40**: 
 
-- **15 mins**: [Geocoding and address matching](./contents/geocoding.md)
-- **15 mins**: [Short demonstration of using Google Map API to translate address into coordinates](./contents/practical_geocoding_api.md)
+[Spatial Joins and Overlay analysis](./contents/overlay.md)
 
 **01:40 -  01:50**: 
 
@@ -131,14 +133,13 @@ Break and small Q&A
 
 Geospatial analysis and visualisation with other tools:
 
-- **20 mins**: [How to use the emerging technologies and tools in GIS to assist your research?](./contents/othertools.md)
-  - light-coding problem solving skill
+- **20 mins**: [Geocoding and address matching](./contents/geocoding.md)
 - **20 mins**: [How to use Python scripts to power up your spatial analysis task in QGIS?](./contents/pyqgis.md)
   - PyQGIS tutorial and basic demonstration
 
 **02:30 -  03:00**: 
 
-- **Practical**: ["Do not recreating wheels!" using existing analysis pakage/API to perform analysis tasks in batch](./contents/practical_othertools.md)
+- **Practical**: [Short demonstration of using Google Map API to translate address into coordinates](./contents/practical_geocoding_api.md)
   - **20 mins**: Demonstration
   - **20 mins**: Hands-on practice
 
