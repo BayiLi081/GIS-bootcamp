@@ -47,14 +47,6 @@ Take a look of the dbf file, which contains a lot of information, but a lot of c
 
 Use **Retain Fields** or **Drop Fields** to downsize the file (tampines_mainroad.shp).
 
-### Add point feature by coordinates
-
-1. Go to Google Map, find the location you want to add, and  find its coordinates (longitude and latitude)
-2. Create a point format vector layer (dont use projected crs, as we are using degree as unit, so just use 4326)
-3. **Add Point Feature**
-4. **Vertex tool current layer**
-5. random add a point, right click the point and manually add the coordinates in the vertex editor table
-
 ## Add exist data to the Map
 
 Drag the [Singapore_mainland_roadnetwork.shp](../../../GIS-bootcamp_qgisfiles/data/bus_stops_singapore.shp) into the canvas of QGIS

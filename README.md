@@ -99,7 +99,7 @@ Break and small Q&A
 
 - **10 mins**: Introduce some common data sources for remote sensing
 
-- **Practical**: "The change of green cover in Singapore" spatiotemporal analysis on NDVI [Longitudinal study](./contents/longitudinalNDVI.md)
+- **Practical (Part1: Data Collection)**: "The change of green cover in Singapore" spatiotemporal analysis on NDVI [Longitudinal study](./contents/longitudinalNDVI.md)
   - 30 min: Instruction and demonstration
   - 5 min: Q&A
 
@@ -111,11 +111,15 @@ Reminding the students to register an account on [EROS Registration System (usgs
 
 **00:00 - 00:30**: 
 
-Troubleshooting on yesterday's practical and explain the answer step by step
+**Practical (Part2 : Calculation)**: "The change of green cover in Singapore" spatiotemporal analysis on NDVI [Longitudinal study](./contents/longitudinalNDVI2.md)
+
+**00:30 - 0:40**
+
+[Recap](./contents/recap_day02.md) of the day 1 and day 2 contents
 
 **00:30 - 01:00**: 
 
-[Network Analysis](./contents/network_analysis.md)
+[Diatance Analysis](./contents/distance_analysis.md)
 
 **01:00 -  01:10**: 
 
@@ -139,7 +143,7 @@ Geospatial analysis and visualisation with other tools:
 
 **02:30 -  03:00**: 
 
-- **Practical**: [Short demonstration of using Google Map API to translate address into coordinates](./contents/practical_geocoding_api.md)
+- **Practical**: [Short demonstration of using OpenStreetMap Nominatim Service to translate address into coordinates](./contents/practical_geocoding_api.md)
   - **20 mins**: Demonstration
   - **20 mins**: Hands-on practice
 

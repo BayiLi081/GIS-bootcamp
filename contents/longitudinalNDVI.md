@@ -1,19 +1,18 @@
-# Calculating the NDVI in QGIS
+# Download the satellite image data
 
-## Download the Landsat 8 data
+Create an account on [USGS](https://ers.cr.usgs.gov/register)
 
-1. Create an account on [USGS](https://ers.cr.usgs.gov/register)
-2. Login through the [username and password](https://ers.cr.usgs.gov/login)
-3. Open [EarthExplorer](https://earthexplorer.usgs.gov/)
-4. Type in **Landsat 8 (All matched results)** in Data Set Search
-5. Ask Google/ChatGPT the difference between level 1 and level 2 data set, but in the study, we use the level 2 (overall, level 2 is more accurate)
-6. Read the detail and information about the [USGS EROS Archive - Landsat Archives - Landsat 8-9 OLI/TIRS Collection 2 Level-2 Science Products | U.S. Geological Survey](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-landsat-archives-landsat-8-9-olitirs-collection-2-level-2)
-7. Read the [What are the band designations for the Landsat satellites? | U.S. Geological Survey (usgs.gov)](https://www.usgs.gov/faqs/what-are-band-designations-landsat-satellites)
-8. Zoom to Singapore, and click **Use Map** (Or use the number of path and row of WRS: 125 and 059 in Additional Criteria)
-9. Select the date range and choose the the data range you want to search (In this tutorial, we just limit to August in the search months box)
-10. Limit the satellite to 8 in the additional criteria.
+1. Login through the [username and password](https://ers.cr.usgs.gov/login)
+2. Open [EarthExplorer](https://earthexplorer.usgs.gov/)
+3. Type in **Landsat 8 (All matched results)** in Data Set Search
+4. Ask Google/ChatGPT the difference between level 1 and level 2 data set, but in the study, we use the level 2 (overall, level 2 is more accurate)
+5. Read the detail and information about the [USGS EROS Archive - Landsat Archives - Landsat 8-9 OLI/TIRS Collection 2 Level-2 Science Products | U.S. Geological Survey](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-landsat-archives-landsat-8-9-olitirs-collection-2-level-2)
+6. Read the [What are the band designations for the Landsat satellites? | U.S. Geological Survey (usgs.gov)](https://www.usgs.gov/faqs/what-are-band-designations-landsat-satellites)
+7. Zoom to Singapore, and click **Use Map** (Or use the number of path and row of WRS: 125 and 059 in Additional Criteria)
+8. Select the date range and choose the the data range you want to search (In this tutorial, we just limit to August in the search months box)
+9. Limit the satellite to 8 in the additional criteria.
 
-11. Limit the collection category to Tier 1
+10. Limit the collection category to Tier 1
 
 > What is the difference between Tier 1 and Tier 2 Landsat?
 >
@@ -44,41 +43,3 @@ There are algorithmns to mask out clouds in the satellite images different from 
 For example, in QGIS, you can follow [the tutorial to mask the clouds in Landsat 8 images](https://giscrack.com/application-of-masks-for-clouds-in-landsat-8-images-with-qgis/).
 
 In this tutorial, we can just proceed to calculation as we only use the function of raster calculator.
-
-## Conduct the Calculating
-
-In **Landsat 8-9 Operational Land Imager (OLI) and Thermal Infrared Sensor (TIRS**):
-
-| Bands                                | Wavelength (micrometers) | Resolution (meters) |
-| ------------------------------------ | ------------------------ | ------------------- |
-| Band 1 - Coastal aerosol             | 0.43-0.45                | 30                  |
-| Band 2 - Blue                        | 0.45-0.51                | 30                  |
-| Band 3 - Green                       | 0.53-0.59                | 30                  |
-| Band 4 - **Red**                     | 0.64-0.67                | 30                  |
-| Band 5 - **Near Infrared (NIR)**     | 0.85-0.88                | 30                  |
-| Band 6 - Shortwave Infrared (SWIR) 1 | 1.57-1.65                | 30                  |
-| Band 7 - Shortwave Infrared (SWIR) 2 | 2.11-2.29                | 30                  |
-| Band 8 - Panchromatic                | 0.50-0.68                | 15                  |
-| Band 9 - Cirrus                      | 1.36-1.38                | 30                  |
-| Band 10 - Thermal Infrared (TIRS) 1  | 10.6-11.19               | 100                 |
-| Band 11 - Thermal Infrared (TIRS) 2  | 11.50-12.51              | 100                 |
-
-NDVI = (Band 5 – Band 4) / (Band 5 + Band 4)
-
-```
-(Singapore_20150820_B5@1 - Singapore_20150820_B4@1) / (Singapore_20150820_B5@1 + Singapore_20150820_B4@1)
-```
-
-Can manually type in or use the NDVI in predefined expressions
-
-Reference Layer: use one of input layers
-
-Change the symbology
-
-| Bil  | Vegetation Classes | Description                               | NDVI Values  |
-| ---- | ------------------ | ----------------------------------------- | ------------ |
-| 1    | Non-Vegetation     | Barren areas, build up area, road network | -1 to 0.199  |
-| 3    | Low Vegetation     | Shrub and grassland                       | 0.2 to 0.5   |
-| 3    | High Vegetation    | Temperate and Tropical urban forest       | 0.501 to 1.0 |
-
-Urban Vegetation Classes and NDVI value (Source: )

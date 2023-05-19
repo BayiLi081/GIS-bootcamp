@@ -44,4 +44,19 @@ Finding the intersections between polygons in two layers.
 
 
 
-## Spatial Joins
+## Spatial Joins Actions in QGIS
+
+Summarise the total number of bus stops for each planning areas in Singapore:
+
+Using the **count points in polygon** 
+
+After calculating the number (New Field NUMPOINTS will be added to the new count file).
+
+Go to Symbology of the Layer properties. Choose Graduated scheme; value, color ramp.
+
+And choose one mode of classification.
+
+classify and apply.
+
+
+
